@@ -1,0 +1,23 @@
+title Diagram
+
+
+note over browser:
+User clicks on the save button
+end note
+
+note over browser:
+browser starts executing callback
+code for submit button
+end note
+
+note over browser:
+the browser stays on the same page, 
+it sends no further HTTP requests
+end note
+
+browser->browser: Code redrawNotes()
+browser->browser: Code sendToServer(note)
+
+
+browser->server: HTTP POST https://fullstack-exampleapp.herokuapp.com/new_note_spa
+server-->browser: [{"message":"note created"}]
