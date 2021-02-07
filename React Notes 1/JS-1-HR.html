@@ -1,0 +1,119 @@
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <title>1 Videoda Javascript</title>
+    <style>
+        .header{
+            text-align: center;
+            font-family: sans-serif;
+            font-size: 18px;
+            background: red;
+        }
+        .container{
+            text-align: center;
+            font-size: 30px;
+        }
+    </style>
+</head>
+  <body>
+
+    <div class="header">
+        <h1>1 Videoda Javascript</h1>
+    </div>
+    
+    <hr>
+    <div class = "container"></div>
+
+    <p id="para1">Paragraf 1</p>
+    <button onclick="renkDegistir()">Tikla</button>
+
+    <button onclick="tikla(this)">Tikla</button>
+
+    <button onmouseover="mouseover()" onmouseout="mouseout()">Tikla</button>
+    </div>
+
+    <script>
+        /*
+        function mouseover(){
+            var element = document.getElementById("para1");
+            element.innerHTML = "Mouse Over Effecti";
+            element.style.color = "Blue";
+        }
+        -----------
+        function mouseout(){
+            var element = document.getElementById("para1");
+            element.innerHTML = "Mouse Out Effecti";
+            element.style.color = "Green";
+        }
+        -----------
+        function renkDegistir(){
+          var element = document.getElementById("para1");
+          element.style.color = "red";
+        }
+        -----------
+        function tikla(element){
+            element.innerHTML = "Butona tiklandi...";
+            alert("Butona Tikladiniz.")
+        }
+        -----------
+        function Calisan(isim, soyisim, numara){
+            this.isim = isim;
+            this.soyisim = soyisim;
+            this.numara = numara;
+            this.bilgileriGoster = function (){
+                return "Isim: "+this.isim+"\nSoyisim: "+ this.soyisim+"\nNumara: "+this.numara;
+            }
+        }
+        var calisan1 = new Calisan("Ahmet", "Behcet", 12);
+        console.log(calisan1.bilgileriGoster());
+        -----------
+        var calisan = new Object ();
+
+        calisan.isim = "Ahmet";
+        calisan.isimBilgileri = function(){
+            return "Isim Bilgileri: "+this.isim;
+        };
+
+        console.log(calisan.isimBilgileri());
+        -----------
+        var calisan = {
+           isim : "Ahmet",
+           soyisim : "Can",
+           numara : 123456,
+           diller :["Php", "Java"],
+           adres : {
+               cadde:"Kabil",
+               sokak: "Birinci"
+           },
+           isimBilgileri : function(){
+               return "Calisan Ismi: " +this.isim;
+           }
+        };
+        console.log(calisan.isim);
+        console.log(calisan.diller);
+        console.log(calisan.adres.cadde);
+        console.log(calisan.isimBilgileri()); 
+        -----------
+        function toplama (a, b, c){
+           return a+b+c;       
+        }
+        var toplam = toplama (3,4,5);
+        console.log("Toplamlari = "+toplam);
+        -----------
+         if ( 2 === "2"){
+            console.log("Esitler");
+        }
+        -----------
+        var array = [10, 20, 30];
+        array.forEach(function(sayi){
+            console.log("array " + (sayi) + " nci elemani = " + sayi);
+        }
+        */
+
+    </script>
+  </body>
+
+</html>
