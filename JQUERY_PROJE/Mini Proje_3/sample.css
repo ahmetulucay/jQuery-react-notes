@@ -1,0 +1,45 @@
+html{
+    height: 100%;
+}
+body{
+    background: #2193b0;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #6dd5ed, #2193b0);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #6dd5ed, #2193b0); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */   
+    line-height: 1.5;
+}
+h1{
+    font-size: 200;
+    font-size: 3rem;
+    color: white;
+    text-align: center;
+}
+.tabs{
+    max-width: 600px;
+    margin: 0 auto;
+}
+.tab-list{
+    padding-bottom: 1rem;
+}
+.tab{
+    border: 1px solid transparent;
+    border-radius: 40px;
+    text-decoration: none;
+    padding: .5rem 1rem;
+    color: rgba(255,255,255,0.6);
+    font-weight: 700;
+    background: rgba(10,20,30,.2);
+}
+.tab.active{
+    color: white;
+    background: rgba(255,255,255,0.1);
+    border: 3px solid rgba(255,255,255,0.4);
+}
+.tab-content{
+    background: white;
+    padding: 1.5rem;
+    color: #4a5666;
+    display: none;
+}
+.show{
+    display: block;
+}

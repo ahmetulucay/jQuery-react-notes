@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="sample.css">
+
+
+</head>
+<body>
+	<h1>Model</h1>
+	<div class="shadow"></div>
+	<div class="model">
+	    <h2>Model</h2>
+	    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
+		incididunt ut labore et dolore magna aliqua. At elementum eu facilisis sed odio morbi quis commodo odio. 
+
+		Tortor consequat id porta nibh venenatis. Et malesuada fames ac turpis egestas integer. 
+		Feugiat pretium nibh ipsum consequat nisl. Placerat duis ultricies lacus sed turpis.
+	    </p>
+		<button class="close">Close</button>
+	</div>
+     	<button class="open">Open</button>
+
+    <script type="text/javascript">
+		 $(".open").on("click", function(){
+			 $(".shadow, .model").addClass("active");
+		 });
+		 $(".close, .model").on("click", function(){
+			 $(".shadow, .model").removeClass("active");
+		 });
+		 $(document).keyup(function(e){
+			 if (e.keyCode === 27){
+				 $(".shadow, .model").removeClass("active");
+			 }
+		 });
+
+	</script>
+</body>
+</html>

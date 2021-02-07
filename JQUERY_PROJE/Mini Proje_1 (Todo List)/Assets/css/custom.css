@@ -1,0 +1,73 @@
+body{
+
+    font-family: 'Indie Flower', cursive;
+    background: #2193b0;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #6dd5ed, #2193b0);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #6dd5ed, #2193b0); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    
+}
+ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+h1{
+    background: #FFC837 ;
+    color: black;
+    margin: 0;
+    padding: 10px 20px;
+    font-size: 30px;
+    font-weight: normal;
+}
+li{
+    background: #DBDBDB;
+    height: 40px;
+    line-height: 30px;
+    color: black;
+}
+li:nth-child(2n){
+    background: #9099a2;
+}
+.fa-edit{
+    float: right;
+
+}
+
+.finished{ 
+    color: gray;
+    text-decoration: line-through;
+}
+
+span{
+    background-color: #64233e;
+    height: 40px;
+    margin-right: 20px;
+    text-align: center;
+    color: white;
+    width: 0;
+    display: inline-block;
+    transition: 0.2s linear;
+    opacity: 0;
+}
+li:hover span{
+    width: 40px;
+    opacity: 1.0;
+}
+.container{
+    width: 350px;
+    margin: 100px auto;
+    box-shadow: 12px 12px 2px 1px rgba(72, 72, 190, 0.2);
+}
+input{
+    font-size: 20px;
+    width: 93%;
+    color: rgb(0, 0, 0);
+    padding: 10px 10px 10px 10px;
+    border: 2px solid rgba(0,0,0,0);
+}
+input:focus{
+    background: #fff;
+    border: 3px solid #2980b9;
+    outline: none;
+}

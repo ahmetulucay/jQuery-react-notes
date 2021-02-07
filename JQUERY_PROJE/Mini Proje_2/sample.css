@@ -1,0 +1,76 @@
+html{
+    min-height: 100%;
+}
+body{
+    background: #2193b0;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #6dd5ed, #2193b0);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #6dd5ed, #2193b0); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */   
+    line-height: 1.5;
+    text-align: center;
+}
+h1{
+    font-weight: 300;
+    font-size: 2rem;
+    color: white;
+    text-align: center;
+}
+button{
+    display: inline-block;
+    background-color: rgba(0,0,0,0.3);
+    border: 1px solid transparent;
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+    padding: 1rem 2rem;
+    border-radius: 45px;
+    vertical-align: middle;
+    cursor: pointer;
+}
+button:hover{
+    border: 1px solid rgba(255,255,255,0.8);
+    color: white;
+    background: rgba(255,255,255,0.1)
+}
+button.close{
+    background: red;
+}
+button.close:hover, button.open:hover{
+    border: 1px solid white;
+    color: white;
+    background: transparent;
+}
+button.close:hover{
+    background: grey;
+}
+.shadow{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.5);
+    transition:.5s ease;
+    z-index: -1;
+    opacity: 0;
+}
+.shadow.active{
+    opacity: 1;
+    z-index: 2;
+}
+.model{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    max-width: 450px;
+    color: #4a5664;
+    background: #f8f8f8;
+    visibility: hidden;
+    opacity: 1;
+    transition: .5s ease;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+}
+.model.active{
+    visibility: visible;
+    opacity: 1;
+}

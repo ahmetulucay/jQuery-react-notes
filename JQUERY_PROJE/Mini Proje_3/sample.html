@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="sample.css">
+</head>
+<body>
+	<h1>Tabs</h1>
+
+	<div class="tabs">
+		<nav class="tab-list">
+			<a class="tab active" href="#one">One</a>
+			<a class="tab" href="#two">Two</a>
+			<a class="tab" href="#three">Three</a>
+		</nav>
+	</div>
+
+	<div id="one" class="tab-content show">
+		Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
+		incididunt ut labore et dolore magna aliqua. At elementum eu facilisis sed odio morbi quis commodo odio. 
+
+		Tortor consequat id porta nibh venenatis. Et malesuada fames ac turpis egestas integer. 
+		Feugiat pretium nibh ipsum consequat nisl. Placerat duis ultricies lacus sed turpis.
+	</div>
+
+	<div id="two" class="tab-content">
+		At elementum eu facilisis sed odio morbi quis commodo odio. 
+		Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
+		incididunt ut labore et dolore magna aliqua. 
+
+		Tortor consequat id porta nibh venenatis. Et malesuada fames ac turpis egestas integer. 
+		Feugiat pretium nibh ipsum consequat nisl. Placerat duis ultricies lacus sed turpis.
+	</div>
+
+	<div id="three" class="tab-content">
+		Tortor consequat id porta nibh venenatis. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
+		incididunt ut labore et dolore magna aliqua. At elementum eu facilisis sed odio morbi quis commodo odio. 
+
+		Et malesuada fames ac turpis egestas integer. Feugiat pretium nibh ipsum consequat nisl. 
+		Placerat duis ultricies lacus sed turpis.
+	</div>
+
+	<script type="text/javascript">
+	    $(".tab-list").on("click", ".tab", function(){
+            $(".tab").removeClass("active");
+			$(".tab-content").removeClass("show");
+			$(this).addClass("active");
+			$($(this).attr("href")).addClass("show");
+		});
+	</script>
+
+</body>
+</html>
