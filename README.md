@@ -1,6 +1,10 @@
 # Fullstack 
 
-Part (0-1)
+fullstack parts (0-1)
+
+jQuery mini projects
+
+react notes
 
 #
 
